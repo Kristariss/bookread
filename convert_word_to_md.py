@@ -37,10 +37,10 @@ def convert_docx_to_md(input_path, output_path):
 input_dir = os.path.expanduser('~/Desktop/颜拉图儿的笔记')
 os.makedirs(f"{input_dir}/markdown_notes", exist_ok=True)
 
-for filename in os.listdir(input_dir):
-    if filename.endswith('.docx'):
-        output_name = filename.replace('.docx', '.md')
-        convert_docx_to_md(
-            f"{input_dir}/{filename}",
-            f"{input_dir}/markdown_notes/{output_name}"
-        )
+# for filename in os.listdir(input_dir):
+#     if filename.endswith('.docx'):
+#         output_name = filename.replace('.docx', '.md')
+#         convert_docx_to_md(
+#             f"{input_dir}/{filename}",
+#             f"{input_dir}/markdown_notes/{output_name}"
+#         )
